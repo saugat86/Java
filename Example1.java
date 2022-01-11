@@ -1,3 +1,4 @@
+//program to calculate simple interest using Java Swing GUI programming
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
