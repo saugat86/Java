@@ -37,8 +37,8 @@ public class Movie extends JFrame implements ActionListener {
         try{
             Class.forName("com.mysql.cj.jdbc.Driver");
             Connection conn=DriverManager.getConnection("jdbc:mysql://localhost:3306/mrs","root","");
-            Statement stmt= conn.createStatement();
             System.out.println("Database connected successfully");
+            Statement stmt = conn.createStatement();
             String sql="insert into movie(title, genera, language, length) values (?,?,?,?)";
             PreparedStatement ps= conn.prepareStatement(sql);
             ps.setString(1, t1.getText());
